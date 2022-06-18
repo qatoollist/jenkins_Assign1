@@ -2,22 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Build-on-develop') {
             steps {
                 echo 'MVN building...'
             }
         }
-        stage('Test') {
+        stage('Test-on-develop') {
             steps {
                 echo 'JUnit Selenium Testing...'
             }
         }
-        stage('Deploy-to-preprod') {
+        stage('Deploy-to-preprod-on-develop') {
             steps {
                 echo 'Deploy to preprod...'
             }
         }
-        stage('Deploy-to-prod') {
+        stage('Deploy-to-prod-on-develop') {
             steps {
                 echo 'Deploy to Prod...'
             }
